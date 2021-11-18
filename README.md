@@ -31,8 +31,11 @@ Distribution of Wins and Loses
 
 ### Optimization Search Snapshots
 3D plot
+
 ![image](https://user-images.githubusercontent.com/44657125/142321595-c628f045-1a2e-4baf-9d9a-43ce1266ba07.png)
+
 2D Slice
+
 ![image](https://user-images.githubusercontent.com/44657125/142322143-e647bd84-0199-4d65-a852-6a9c001286d8.png)
 
 
