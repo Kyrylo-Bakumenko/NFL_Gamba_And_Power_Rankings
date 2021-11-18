@@ -16,7 +16,7 @@ New York Jets Isolated
 ![image](https://user-images.githubusercontent.com/44657125/142330777-be886f8d-8191-4a70-880a-0da634958c79.png)
 
 ### Betting Performance
-Stats
+Stats, season starts with $1
 
 ![Screenshot (948)](https://user-images.githubusercontent.com/44657125/142328056-451050bc-09be-44a1-8398-f738121ba6c8.png)
 
