@@ -8,6 +8,8 @@ This model demonstrates predictive capabilities in a backtest from the 2020 seas
 
 ### Betting Stats
 
+![image](https://user-images.githubusercontent.com/44657125/142319784-eaba6508-eca7-4af5-97c9-c1961e0a66d9.png)
+
 ## Areas for Further Development
 This project uses webscraping for data gathering for the Elo Model, however there has not yet been an implmentation for on deman historical betting data. Another constant impediement for accurate results is injury in the NFL as the model remains oblivoious to these crucial changes within teams.
 Furthermore there are two main shortcomings of an Elo approach:
