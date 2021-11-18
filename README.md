@@ -1,7 +1,7 @@
 # NFL_Gamba_And_Power_Rankings
 
 ## The Model
-This project creates Elo power rankings system for every team in the NFL using data dating back to 1970. The algorithm scans odds from Vegas (Currently read of spreadsheet format) and compares them to the elo ranking’s predictions. The use of 'odds' is neccessary for a more complete picture of the accuracy of the model. For example, predicting a NFL team to beat a high school team is hardly a feat, predictions are most valuable when the outcome is unclear. This model factors in the NFL Draft by regressing teams towords the mean after every season proportionaly to their standings in order to mimick the advantage of early draft picks.
+This project creates Elo power rankings system for every team in the NFL using data dating back to 1970. The algorithm scans odds from Vegas (Currently read of spreadsheet format) and compares them to the elo ranking’s predictions. The use of 'odds' is neccessary for a more complete picture of the accuracy of the model. For example, predicting a NFL team to beat a high school team is hardly a feat, predictions are most valuable when the outcome is unclear. This model factors in the NFL Draft by regressing teams towords the mean after every season proportionaly to their standings in order to mimick the advantage of early draft picks. The final weights for the model where found by regressive search throughthe Elo Model's learning parameters (*MAX_GAIN*, *SEASON_ADJ*, *DELTA*) and the optimization of the betting model's variables (*mu* and *max_edge*).
 
 ## Results
 This model demonstrates predictive capabilities in a backtest from the 2020 season, however the availbility and changing nature of sports betting odds limits curretn back testing capabilities.
