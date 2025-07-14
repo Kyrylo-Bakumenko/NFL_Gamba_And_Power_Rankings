@@ -53,3 +53,17 @@ The elo ranking applies to the team as a whole. This makes it impossible to acco
 ## Looking Ahead
 In the future I will add web-scraping for adding betting data. This will allow me to perform backtesting across a wider range of years.
 Additionaly I plan to innovate on a more inclusive multivariable model using Trust Regions or attaching an indivdualised score to each active player on an NFL team. This will allow me more accurately asses the impact of injuries, trades, and other line-up changes.
+
+## Elo-Core Implementation
+The repository now includes a standalone Python module under `elo_core/` which implements the Elo-Core model described in the project notes. It contains:
+
+* `elo.py` – Elo rating updates with logistic margin weights and per-position K-factors.
+* `synergy.py` – PyTorch module for low-rank player synergy embeddings and a simple training loop.
+* `team_rating.py` – Utility to combine talent and synergy into a team rating.
+
+These components assume the data catalog specified in the project documentation. After preparing the data, you can update ratings week by week using `EloSystem.update_game` and train the synergy model with `train_epoch`.
+
+### Data Scrapers
+The `data_scrapers` package provides utilities for collecting play-by-play logs, snap counts, rosters, injuries, and Vegas lines. These scrapers avoid paid APIs and instead use polite web scraping with a rate-limited Selenium driver. Ensure `chromedriver` is installed and run `python download_all_data.py` to fetch the latest files.
+
+Historical closing lines going back to 2006 are downloaded from Australia Sports Betting via the helper `fetch_historical_vegas`, which parses their public Excel file.
